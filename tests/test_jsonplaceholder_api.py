@@ -37,7 +37,7 @@ def test_get_post_by_id(api_base_url, post_id, expected_title, expected_status_c
     record_property("title", data["title"])
 
     extras.append(html_extras.html(
-        f"<div style='padding:4px;margin:2px;border:1px solid #ccc;border-radius:5px; background: #e3f2fd;'>"
+        f"<div style='padding:4px;margin:2px;border:1px solid #ccc;border-radius:5px;'>"
         f"<b>GET /posts/{post_id}</b><br>"
         f"Status: {response.status_code}<br>"
         f"Title: {data['title']}</div>"
